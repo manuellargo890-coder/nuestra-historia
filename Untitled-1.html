@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Nuestra Historia 💘</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #fff0f6;
+      color: #444;
+    }
+
+    header {
+      background: #ff4d94;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 2em;
+      font-weight: bold;
+      letter-spacing: 2px;
+      border-bottom-left-radius: 50% 20%;
+      border-bottom-right-radius: 50% 20%;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #ff4d94;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      text-align: justify;
+      margin: 15px 0;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .galeria img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #ff4d94;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      border-top-left-radius: 50% 20%;
+      border-top-right-radius: 50% 20%;
+    }
+
+    /* Botón sorpresa */
+    .btn-sorpresa {
+      display: block;
+      margin: 30px auto;
+      padding: 12px 20px;
+      font-size: 1.2em;
+      color: white;
+      background: #ff4d94;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s ease-in-out;
+    }
+
+    .btn-sorpresa:hover {
+      background: #e60073;
+    }
+
+    .mensaje {
+      display: none;
+      text-align: center;
+      font-size: 1.3em;
+      color: #ff0066;
+      margin-top: 20px;
+      animation: aparecer 1s ease-in-out;
+    }
+
+    .cancion {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+      font-size: 1.1em;
+      color: #ff0066;
+    }
+
+    .cancion-contenido {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    @keyframes aparecer {
+      from {opacity: 0; transform: scale(0.8);}
+      to {opacity: 1; transform: scale(1);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    SOFIA JEPSEN 💘
+  </header>
+
+  <section>
+    <h2>El Comienzo</h2>
+    <p>
+      Nuestra historia comenzó un <strong>02 de enero del 2024</strong>. Desde ese día, empezamos a escribir juntos un capítulo lleno de amor, complicidad y momentos únicos que solo nosotros entendemos.
+    </p>
+    <p>
+      No todo ha sido fácil, pero entre risas, llanto y alegria, siento que encontré el camino que soñaba tener contigo, aunque muchas veces llegamos a ver todo perdido.
+    </p>
+    <p>
+      Gracias a ti he aprendido que el amor verdadero se construye con paciencia, apoyo y cariño. Y hoy, más que nunca, estoy convencido de que mi corazón te pertenece y quiero que seamos solo tu y yo siempre.❤️
+    </p>
+  </section>
+
+  <section>
+    <h2>Momentos Especiales</h2>
+    <div class="galeria">
+      <img src="foto1.jpg" alt="Nosotros 1">
+      <img src="foto2.jpg" alt="Nosotros 2">
+      <img src="foto3.jpg" alt="Nosotros 3">
+      <img src="foto4.jpg" alt="Nosotros 4">
+      <img src="foto5.jpg" alt="Nosotros 5">
+      <img src="foto6.jpg" alt="Nosotros 6">
+    </div>
+  </section>
+
+  <button class="btn-sorpresa" onclick="mostrarMensaje()">💌 Ver Sorpresa</button>
+  <div id="mensaje" class="mensaje">No te imaginas cuanto te amo, y lo dispuesto que estoy a dedicar mi vida a ti! ❤️✨</div>
+
+  <div id="cancion" class="cancion">
+    <div class="cancion-contenido">
+      <iframe style="border-radius:12px" 
+        src="https://open.spotify.com/embed/track/1gUn7fbTiX5QJ6xvmWNpi2?utm_source=generator" 
+        width="300" height="80" frameBorder="0" 
+        allowfullscreen="" 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+        loading="lazy"></iframe>
+      <span>💖 Sin mucho que decir, una canción que lo expresa TODO</span>
+    </div>
+  </div>
+
+  <footer>
+    Con ansias de que te guste. 💖
+  </footer>
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById("mensaje").style.display = "block";
+      document.getElementById("cancion").style.display = "block";
+    }
+  </script>
+</body>
+</html>
